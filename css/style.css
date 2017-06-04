@@ -1,0 +1,42 @@
+.outer {
+    background-color: coral;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    background-color: darkblue;
+    height: 100px;
+    width: 100px;
+}
+
+h1 {
+    font-family: "Verdana";
+    font-weight: 700;
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+.circle {
+    background-color: darkturquoise;
+    border: 1px solid darkturquoise; 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.circle:hover {
+    background-color: white;
+    color: darkturquoise;
+    border: 1px solid darkturquoise;
+    transition: all 0.3s ease-in-out;
+}
