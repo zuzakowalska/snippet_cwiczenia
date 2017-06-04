@@ -2,6 +2,7 @@
     font-family: "Verdana", sans-serif;
     box-sizing: border-box;
     font-size: 16px;
+    margin: 0;
 }
 
 h3 {
@@ -9,6 +10,12 @@ h3 {
     margin-top: 30px;
     margin-bottom:15px;
     color: lightslategray;
+}
+
+.container {
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+    clear: both;
 }
 
 /* zadanie 1 */
@@ -175,5 +182,48 @@ blockquote:lang(pl):after{
     color: darkslateblue;
 }
 
+/* zadanie 9 */
+
+footer {
+    bottom: 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: darkslategrey;
+    height: 50px;
+    width: 100%;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0rem 1rem;
+}
+
+/* zadanie 10 */
+
+.kotek-container {
+    width: 1000px;
+    height: 600px;
+    border: 10px solid lightblue;
+    overflow: hidden;
+}
+
+.duzy-kotek {
+    width: 100%;
+    height: 100%;
+    background-color:antiquewhite;
+    background-image: url(http://www.tapetus.pl/obrazki/n/132596_maly-kotek-niebieskie-oczka.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.kotek-container:hover .duzy-kotek,
+.kotek-container:focus .duzy-kotek {
+    transform: scale(2);
+    transition: all .5s;
+    
+}
 
 
