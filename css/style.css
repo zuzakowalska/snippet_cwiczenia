@@ -1,5 +1,14 @@
 * {
+    font-family: "Verdana", sans-serif;
     box-sizing: border-box;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 1.rem;
+    margin-top: 30px;
+    margin-bottom:15px;
+    color: lightslategray;
 }
 
 /* zadanie 1 */
@@ -77,3 +86,15 @@ ul#custom-list {
     
 }
 
+/* zadanie 6 */
+
+input {
+    width: 50vw;
+    height: 50px;
+    padding: 1.5em;
+}
+
+input::placeholder {
+    font-family: "Verdana", sans-serif;
+    font-size: 1.5em;
+}
