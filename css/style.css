@@ -5,8 +5,12 @@
     margin: 0;
 }
 
+h2 {
+    font-size: 5rem;
+}
+
 h3 {
-    font-size: 1.rem;
+    font-size: 1rem;
     margin-top: 30px;
     margin-bottom:15px;
     color: lightslategray;
@@ -112,7 +116,7 @@ a {
     text-decoration: none;
 }
 
-a[download] {
+a[href$=".doc"] {
     color:cadetblue;
 }
 
@@ -207,6 +211,7 @@ footer h3 {
     height: 600px;
     border: 10px solid lightblue;
     overflow: hidden;
+    margin-bottom: 3rem;
 }
 
 .duzy-kotek {
@@ -226,4 +231,21 @@ footer h3 {
     
 }
 
+/* zadanie 11 */
 
+i {
+    animation-name: heartbeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+       transform: scale(1.5);
+    }
+    
+    50% {
+        transform: scale(1);
+    }
+}
