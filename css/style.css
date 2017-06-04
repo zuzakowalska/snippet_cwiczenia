@@ -108,3 +108,72 @@ a {
 a[download] {
     color:cadetblue;
 }
+
+/* zadanie 8 */
+
+q {
+   font-size: 0.8rem; 
+    margin-bottom: 10px;
+}
+
+q:lang(en) {
+    quotes: "\00BB" "\00AB";
+}
+
+q:lang(pl) {
+    quotes: "\201E" "\201D";
+}
+
+blockquote:lang(en) {
+    font-style: italic;
+    margin: 3rem 0.5rem;
+    position: relative;
+    color: #383838;
+    padding-left: 3rem;
+    height: 4rem;
+}
+
+blockquote:lang(en):before {
+    display: block;
+    padding-left: 1.5rem;
+    content: "\00BB";
+    font-size: 4rem;
+    position: absolute;
+    left: -2rem;
+    top: -2rem;
+    color: #7a7a7a;
+}
+
+blockquote:lang(pl) {
+    font-style: italic;
+    margin: 3rem 0.5rem;
+    position: relative;
+    color: steelblue;
+    padding-left: 3rem;
+    height: 4rem;
+}
+
+blockquote:lang(pl):before {
+    display: block;
+    padding-left: 1.5rem;
+    content: "\201D";
+    font-size: 4rem;
+    position: absolute;
+    left: -1rem;
+    top: -2rem;
+    color: darkslateblue;
+}
+
+blockquote:lang(pl):after{
+    display: block;
+    padding-left: 1.5rem;
+    content: "\201D";
+    font-size: 4rem;
+    position: absolute;
+    right: 21rem;
+    top: 1rem;
+    color: darkslateblue;
+}
+
+
+
