@@ -52,3 +52,28 @@
     background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
 }
 
+/* zadanie 4 */
+
+video {
+    width: 100%;
+}
+
+/* zadanie 5 */
+
+ul#custom-list {
+    list-style: none;
+}
+
+#custom-list li {
+    padding-left: 1.3em;
+}
+
+#custom-list li:before {
+    content: "\f2c6";
+    font-family: "FontAwesome";
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    
+}
+
